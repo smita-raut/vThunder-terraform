@@ -1,8 +1,7 @@
-variable "aws_region" {
-    description = "EC2 Region for the VPC"
-    default = "us-east-2"
+variable "amis" {
+    description = "AMIs by region"
+    default = "ami-a95662cc"  # vThunder image
 }
-
 
 
 resource "aws_instance" "centos-vm01" {

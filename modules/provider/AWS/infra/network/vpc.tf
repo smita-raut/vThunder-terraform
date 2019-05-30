@@ -113,6 +113,7 @@ resource "aws_network_interface" "default" {
 
 
 resource "aws_network_interface" "test" {
+  #source = "../compute/"
   subnet_id       = "${aws_subnet.us-east-2a-private.id}"
   private_ips     = ["10.0.2.15", "10.0.2.16"]
   security_groups = ["${aws_security_group.test_sg.id}"]
