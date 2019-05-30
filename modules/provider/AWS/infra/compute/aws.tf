@@ -12,6 +12,6 @@ variable "my_profile" {
 provider "aws" {
     #access_key = "${var.aws_access_key}"
     #secret_key = "${var.aws_secret_key}"
-    region = "${var.aws_region}"
+    aws_region = "${var.aws_region}"
     #profile= "${var.my_profile}"
 }
