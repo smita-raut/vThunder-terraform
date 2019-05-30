@@ -1,3 +1,10 @@
+variable "aws_region" {
+    description = "EC2 Region for the VPC"
+    default = "us-east-2"
+}
+
+
+
 resource "aws_instance" "centos-vm01" {
   #ami           = "ami-090cbf775708a1421"
   ami ="${var.amis}"
